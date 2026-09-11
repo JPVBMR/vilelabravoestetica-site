@@ -16,7 +16,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Jost:wght@200;300;400;500&display=swap">
 <link rel="stylesheet" href="styles.css">
-<!-- Dados estruturados para SEO local (Google entende que isto é uma clínica médica) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -32,248 +31,282 @@
     "addressCountry": "PT"
   },
   "telephone": "+351969704868",
-  "sameAs": ["https://www.instagram.com/dra.joanabravo"]
+  "sameAs": ["https://instagram.com/dra.joanabravo"]
 }
 </script>
 </head>
 <body>
 
-<header class="site-header">
-  <div class="container header-inner">
-    <a href="#top" class="logo">Dra. Joana Bravo</a>
-    <nav class="nav-desktop">
-      <a href="#sobre">Sobre</a>
-      <a href="#formacao">Formação</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#antes-depois">Antes &amp; Depois</a>
-      <a href="#testemunhos">Testemunhos</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-    <a href="https://wa.me/351969704868" class="btn btn-primary btn-small" target="_blank" rel="noopener">Agendar consulta</a>
-    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-  <nav class="nav-mobile" id="nav-mobile">
-    <a href="#sobre">Sobre</a>
-    <a href="#formacao">Formação</a>
-    <a href="#servicos">Serviços</a>
-    <a href="#antes-depois">Antes &amp; Depois</a>
-    <a href="#testemunhos">Testemunhos</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-</header>
-
-<main id="top">
+<main>
 
   <!-- HERO -->
-  <section class="hero container">
-    <div class="hero-text">
-      <p class="eyebrow">Braga · Portugal</p>
-      <h1>Medicina Estética com <em>Ciência</em> e <em>Naturalidade</em></h1>
-      <p class="lead">Harmonização facial e corporal em Braga — tratamentos personalizados pela Dra. Joana Bravo.</p>
-      <div class="hero-actions">
-        <a href="https://wa.me/351969704868" class="btn btn-primary" target="_blank" rel="noopener">Agendar consulta no WhatsApp</a>
-        <a href="#servicos" class="btn btn-ghost">Ver serviços</a>
+  <section id="inicio" class="hero-full">
+    <div class="hero-glow hero-glow-a" aria-hidden="true"></div>
+    <div class="hero-glow hero-glow-b" aria-hidden="true"></div>
+    <div class="container hero-full-inner">
+      <p class="eyebrow">Dra. Joana Bravo</p>
+      <h1>Medicina Estética com <span class="hero-italic">Ciência e Naturalidade</span></h1>
+      <p class="lead lead-center">Harmonização facial e corporal em Braga — tratamentos personalizados pela Dra. Joana Bravo</p>
+      <div class="hero-actions hero-actions-center">
+        <a href="https://wa.me/351969704868" class="btn btn-primary" target="_blank" rel="noopener">Agendar Consulta</a>
+        <a href="#tratamentos" class="btn btn-outline">Ver Tratamentos</a>
       </div>
-    </div>
-    <div class="hero-image">
-      <img src="images/dra-joana-bravo.jpg" alt="Dra. Joana Bravo, médica estética em Braga" width="768" height="1376" loading="eager">
+      <p class="eyebrow eyebrow-muted">Braga · Portugal</p>
     </div>
   </section>
 
   <!-- SOBRE -->
-  <section id="sobre" class="section container">
-    <div class="section-heading">
-      <p class="eyebrow">Sobre</p>
-      <h2>Dra. Joana Bravo <span class="divider">—</span> Médica Estética | Clínica Geral</h2>
-    </div>
-    <p class="section-text">
-      Formada pela Faculdade de Medicina da Universidade do Porto, com especialização nas Universidades
-      de Santiago de Compostela e Barcelona. Dedicada a realçar a beleza natural de cada pessoa com
-      técnica, segurança e resultados naturais.
-    </p>
-    <ul class="highlight-list">
-      <li><span class="highlight-icon">🎓</span> Medicina UP + Santiago + Barcelona</li>
-      <li><span class="highlight-icon">✨</span> Harmonização Facial e Corporal</li>
-      <li><span class="highlight-icon">📍</span> Braga, Portugal</li>
-    </ul>
-  </section>
-
-  <!-- FORMAÇÃO E EXPERIÊNCIA -->
-  <section id="formacao" class="section container">
-    <div class="section-heading section-heading-center">
-      <p class="eyebrow">Sobre a Dra.</p>
-      <h2>Formação e Experiência</h2>
-    </div>
-    <div class="timeline">
-      <div class="timeline-item">
-        <span class="timeline-dot"></span>
-        <p class="timeline-label">Licenciatura</p>
-        <h3>Faculdade de Medicina</h3>
-        <p class="timeline-sub">Universidade do Porto</p>
+  <section id="sobre" class="section section-muted">
+    <div class="container about-grid">
+      <div class="about-photo-wrap">
+        <div class="about-photo-frame" aria-hidden="true"></div>
+        <img class="about-photo" src="images/dra-joana-bravo.jpg" alt="Retrato da Dra. Joana Bravo, médica estética em Braga" width="640" height="640" loading="lazy">
       </div>
-      <div class="timeline-item">
-        <span class="timeline-dot"></span>
-        <p class="timeline-label">Especialização</p>
-        <h3>Medicina Estética</h3>
-        <p class="timeline-sub">Universidade de Santiago de Compostela</p>
-      </div>
-      <div class="timeline-item">
-        <span class="timeline-dot"></span>
-        <p class="timeline-label">Especialização</p>
-        <h3>Harmonização Facial e Corporal</h3>
-        <p class="timeline-sub">Universidade de Barcelona</p>
-      </div>
-      <div class="timeline-item">
-        <span class="timeline-dot"></span>
-        <p class="timeline-label">Atualmente</p>
-        <h3>Médica Estética e Clínica Geral</h3>
-        <p class="timeline-sub">Braga, Portugal</p>
+      <div class="about-text">
+        <p class="eyebrow">Sobre</p>
+        <h2>Dra. Joana Bravo</h2>
+        <p class="about-subtitle">Médica Estética | Clínica Geral</p>
+        <div class="about-divider" aria-hidden="true"></div>
+        <p class="section-text">
+          Formada pela Faculdade de Medicina da Universidade do Porto, com especialização nas Universidades
+          de Santiago de Compostela e Barcelona. Dedicada a realçar a beleza natural de cada pessoa com
+          técnica, segurança e resultados naturais.
+        </p>
+        <ul class="pill-list">
+          <li><span class="pill-icon">🎓</span> Medicina UP + Santiago + Barcelona</li>
+          <li><span class="pill-icon">✨</span> Harmonização Facial e Corporal</li>
+          <li><span class="pill-icon">📍</span> Braga, Portugal</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- SERVIÇOS -->
-  <section id="servicos" class="section section-muted">
+  <!-- TRATAMENTOS -->
+  <section id="tratamentos" class="section">
     <div class="container">
-      <div class="section-heading">
+      <div class="section-heading section-heading-center">
         <p class="eyebrow">Serviços</p>
-        <h2>Tratamentos personalizados</h2>
+        <h2>Tratamentos</h2>
+        <p class="section-subtitle">Cada plano é desenhado para a sua anatomia e para os seus objectivos, sempre com uma abordagem médica e resultados discretos.</p>
       </div>
       <div class="services-grid">
         <article class="service-card">
+          <span class="service-icon" aria-hidden="true">💉</span>
           <h3>Botox Full Face</h3>
+          <span class="service-underline" aria-hidden="true"></span>
           <p>Suavização global das rugas de expressão, preservando a mímica natural do rosto.</p>
         </article>
         <article class="service-card">
+          <span class="service-icon" aria-hidden="true">✨</span>
           <h3>Harmonização Facial</h3>
+          <span class="service-underline" aria-hidden="true"></span>
           <p>Plano individualizado que equilibra proporções e devolve harmonia às linhas do rosto.</p>
         </article>
         <article class="service-card">
+          <span class="service-icon" aria-hidden="true">💧</span>
           <h3>Preenchimento Labial</h3>
+          <span class="service-underline" aria-hidden="true"></span>
           <p>Redefinição do contorno com aumento discreto de volume para um resultado natural.</p>
         </article>
         <article class="service-card">
+          <span class="service-icon" aria-hidden="true">🌟</span>
           <h3>Liftera</h3>
+          <span class="service-underline" aria-hidden="true"></span>
           <p>Lifting sem cirurgia por ultrassons microfocados, com firmeza progressiva da pele.</p>
         </article>
         <article class="service-card">
+          <span class="service-icon" aria-hidden="true">🌸</span>
           <h3>Tratamentos Corporais</h3>
+          <span class="service-underline" aria-hidden="true"></span>
           <p>Remodelação e melhoria da qualidade da pele com protocolos corporais personalizados.</p>
         </article>
         <article class="service-card">
+          <span class="service-icon" aria-hidden="true">👁️</span>
           <h3>Região dos Olhos</h3>
+          <span class="service-underline" aria-hidden="true"></span>
           <p>Tratamento de olheiras e do olhar cansado, com um resultado descansado e luminoso.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- ANTES E DEPOIS -->
-  <section id="antes-depois" class="section container">
-    <div class="section-heading section-heading-center">
-      <p class="eyebrow">Antes e Depois</p>
-      <h2>Resultados Naturais</h2>
+  <!-- RESULTADOS / ANTES E DEPOIS -->
+  <section id="resultados" class="section section-muted">
+    <div class="container">
+      <div class="section-heading section-heading-center">
+        <p class="eyebrow">Antes e Depois</p>
+        <h2>Resultados Naturais</h2>
+      </div>
+      <div class="gallery-grid">
+        <figure class="gallery-item">
+          <div class="gallery-photo">
+            <img src="images/antes-depois-1.jpg" alt="Antes e depois de toxina botulínica" loading="lazy" width="473" height="641">
+          </div>
+          <figcaption class="gallery-caption">
+            <h3>Toxina botulínica</h3>
+            <p>Diminuição das rugas de expressão e melhoria da qualidade da pele.</p>
+          </figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <div class="gallery-photo">
+            <img src="images/antes-depois-2.jpg" alt="Antes e depois de preenchimento labial" loading="lazy" width="458" height="629">
+          </div>
+          <figcaption class="gallery-caption">
+            <h3>Preenchimento labial</h3>
+            <p>Redefinição labial com discreto aumento de volume para um efeito natural.</p>
+          </figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <div class="gallery-photo">
+            <img src="images/antes-depois-3.jpg" alt="Antes e depois de ácido hialurónico" loading="lazy" width="468" height="638">
+          </div>
+          <figcaption class="gallery-caption">
+            <h3>Ácido hialurónico</h3>
+            <p>Suavização dos sulcos nasogenianos e das linhas de marionete.</p>
+          </figcaption>
+        </figure>
+      </div>
+      <p class="gallery-tagline">Resultados reais, beleza natural</p>
     </div>
-    <div class="gallery-grid">
-      <figure class="gallery-item">
-        <div class="gallery-photo">
-          <img src="images/antes-depois-1.jpg" alt="Antes e depois de aplicação de toxina botulínica" loading="lazy" width="473" height="641">
-        </div>
-        <figcaption class="gallery-caption">
-          <h3>Aplicação de toxina botulínica</h3>
-          <p>Objetivo - Diminuição das rugas de expressão, melhoria da qualidade da pele e atraso do envelhecimento cutâneo.</p>
-        </figcaption>
-      </figure>
-      <figure class="gallery-item">
-        <div class="gallery-photo">
-          <img src="images/antes-depois-2.jpg" alt="Antes e depois de preenchimento labial" loading="lazy" width="458" height="629">
-        </div>
-        <figcaption class="gallery-caption">
-          <h3>Preenchimento labial</h3>
-          <p>Objetivo - redefinição labial com discreto aumento de volume para um efeito natural.</p>
-        </figcaption>
-      </figure>
-      <figure class="gallery-item">
-        <div class="gallery-photo">
-          <img src="images/antes-depois-3.jpg" alt="Antes e depois de aplicação de ácido hialurónico" loading="lazy" width="468" height="638">
-        </div>
-        <figcaption class="gallery-caption">
-          <h3>Aplicação de ácido hialurónico</h3>
-          <p>Objetivo - Diminuição das rugas de expressão nos sulcos nasogenianos e linhas de marionete.</p>
-        </figcaption>
-      </figure>
-    </div>
-    <p class="gallery-tagline">Resultados reais, beleza natural</p>
   </section>
 
   <!-- TESTEMUNHOS -->
-  <section id="testemunhos" class="section section-muted">
+  <section id="testemunhos" class="section">
     <div class="container">
-      <div class="section-heading">
+      <div class="section-heading section-heading-center">
         <p class="eyebrow">Testemunhos</p>
-        <h2>O que dizem as pacientes</h2>
+        <h2>O Que Dizem As Minhas Pacientes</h2>
       </div>
+      <p class="testimonials-rating"><span aria-hidden="true">★★★★★</span><span class="testimonials-rating-label">nota 5.0</span></p>
       <div class="testimonials-grid">
         <blockquote class="testimonial-card">
-          <p class="stars">★★★★★</p>
-          <p class="testimonial-text">“Senti-me acompanhada do início ao fim. O resultado é discreto, exatamente
-            como eu queria — ninguém diz que fiz algo, apenas que estou bem.”</p>
-          <footer>Marta S. <span>— Harmonização facial</span></footer>
+          <span class="testimonial-quote-mark" aria-hidden="true">&ldquo;</span>
+          <p class="testimonial-text">Senti-me acompanhada do início ao fim. O resultado é discreto, exatamente
+            como eu queria — ninguém diz que fiz algo, apenas que estou bem.</p>
+          <footer>
+            <p class="testimonial-name">Marta S.</p>
+            <p class="testimonial-detail">Harmonização facial</p>
+            <p class="stars" aria-label="5 de 5 estrelas"><span aria-hidden="true">★★★★★</span></p>
+          </footer>
         </blockquote>
         <blockquote class="testimonial-card">
-          <p class="stars">★★★★★</p>
-          <p class="testimonial-text">“A Dra. Joana explicou-me cada passo com muita calma e segurança. Confiança
-            total, e um resultado muito natural nos lábios.”</p>
-          <footer>Cláudia R. <span>— Preenchimento labial</span></footer>
+          <span class="testimonial-quote-mark" aria-hidden="true">&ldquo;</span>
+          <p class="testimonial-text">A Dra. Joana explicou-me cada passo com muita calma e segurança. Confiança
+            total, e um resultado muito natural nos lábios.</p>
+          <footer>
+            <p class="testimonial-name">Cláudia R.</p>
+            <p class="testimonial-detail">Preenchimento labial</p>
+            <p class="stars" aria-label="5 de 5 estrelas"><span aria-hidden="true">★★★★★</span></p>
+          </footer>
         </blockquote>
         <blockquote class="testimonial-card">
-          <p class="stars">★★★★★</p>
-          <p class="testimonial-text">“Um olhar completamente renovado. Consultório impecável e um cuidado com o
-            detalhe que faz toda a diferença.”</p>
-          <footer>Inês F. <span>— Região dos olhos</span></footer>
+          <span class="testimonial-quote-mark" aria-hidden="true">&ldquo;</span>
+          <p class="testimonial-text">Um olhar completamente renovado. Consultório impecável e um cuidado com o
+            detalhe que faz toda a diferença.</p>
+          <footer>
+            <p class="testimonial-name">Inês F.</p>
+            <p class="testimonial-detail">Região dos olhos</p>
+            <p class="stars" aria-label="5 de 5 estrelas"><span aria-hidden="true">★★★★★</span></p>
+          </footer>
         </blockquote>
       </div>
     </div>
   </section>
 
-  <!-- CONTACTO -->
-  <section id="contacto" class="section container">
-    <div class="section-heading">
-      <p class="eyebrow">Contacto</p>
-      <h2>Vamos falar sobre o seu tratamento</h2>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-info">
-        <p><strong>Morada</strong><br>Praça Conde de Agrolongo 183, 4700-315 Braga, Portugal</p>
-        <p><strong>WhatsApp</strong><br><a href="https://wa.me/351969704868" target="_blank" rel="noopener">+351 969 704 868</a></p>
-        <p><strong>Instagram</strong><br><a href="https://www.instagram.com/dra.joanabravo" target="_blank" rel="noopener">@dra.joanabravo</a></p>
-        <a href="https://wa.me/351969704868" class="btn btn-primary" target="_blank" rel="noopener">Agendar consulta no WhatsApp</a>
+  <!-- FORMAÇÃO E EXPERIÊNCIA -->
+  <section id="formacao" class="section section-muted">
+    <div class="container">
+      <div class="section-heading section-heading-center">
+        <p class="eyebrow">Sobre a Dra.</p>
+        <h2>Formação e Experiência</h2>
       </div>
-      <div class="contact-map">
-        <iframe
-          title="Localização da clínica em Braga"
-          src="https://www.google.com/maps?q=Pra%C3%A7a+Conde+de+Agrolongo+183,+4700-315+Braga&output=embed"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <p class="timeline-label">Licenciatura</p>
+          <h3>Faculdade de Medicina</h3>
+          <p class="timeline-sub">Universidade do Porto</p>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <p class="timeline-label">Especialização</p>
+          <h3>Medicina Estética</h3>
+          <p class="timeline-sub">Universidade de Santiago de Compostela</p>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <p class="timeline-label">Especialização</p>
+          <h3>Harmonização Facial e Corporal</h3>
+          <p class="timeline-sub">Universidade de Barcelona</p>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <p class="timeline-label">Actualmente</p>
+          <h3>Médica Estética e Clínica Geral</h3>
+          <p class="timeline-sub">Braga, Portugal</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- LOCALIZAÇÃO -->
+  <section id="localizacao" class="section">
+    <div class="container">
+      <div class="section-heading section-heading-center">
+        <p class="eyebrow">Localização</p>
+        <h2>Onde Me Encontrar</h2>
+      </div>
+      <div class="location-grid">
+        <div class="location-card">
+          <span class="location-icon" aria-hidden="true">📍</span>
+          <address>
+            Praça Conde de Agrolongo 183
+            <span class="location-postal">4700-315 Braga</span>
+          </address>
+          <p class="location-contact"><a href="https://wa.me/351969704868" target="_blank" rel="noopener">WhatsApp: +351 969 704 868</a></p>
+          <p class="location-contact"><a href="https://instagram.com/dra.joanabravo" target="_blank" rel="noopener">Instagram: @dra.joanabravo</a></p>
+          <a href="https://www.google.com/maps/search/?api=1&query=Pra%C3%A7a+Conde+de+Agrolongo+183%2C+4700-315+Braga" target="_blank" rel="noopener" class="btn btn-outline">Como Chegar</a>
+        </div>
+        <div class="location-map">
+          <iframe
+            title="Localização da clínica em Braga"
+            src="https://www.google.com/maps?q=Pra%C3%A7a+Conde+de+Agrolongo+183,+4700-315+Braga&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
       </div>
     </div>
   </section>
+
+  <!-- AGENDAR (CTA escuro) -->
+  <section id="agendar" class="cta-dark">
+    <div class="cta-glow" aria-hidden="true"></div>
+    <div class="container cta-dark-inner">
+      <p class="eyebrow eyebrow-gold">Dra. Joana Bravo</p>
+      <h2 class="cta-dark-title">Realce a Sua <em>Beleza Natural</em></h2>
+      <div class="cta-divider" aria-hidden="true"></div>
+      <p class="cta-dark-text">Agende já a sua consulta com a Dra. Joana Bravo</p>
+      <a href="https://wa.me/351969704868" target="_blank" rel="noopener" class="btn btn-light">Agendar no WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-name">Dra. Joana Bravo</p>
+      <p class="eyebrow">Medicina Estética</p>
+      <address class="footer-address">Praça Conde de Agrolongo 183, Braga</address>
+      <a href="https://instagram.com/dra.joanabravo" target="_blank" rel="noopener" class="footer-instagram">Instagram: @dra.joanabravo</a>
+      <p class="footer-copy">&copy; <span id="year"></span> Dra. Joana Bravo — Todos os direitos reservados</p>
+    </div>
+  </footer>
 
 </main>
 
-<footer class="site-footer">
-  <div class="container">
-    <p>&copy; <span id="year"></span> Dra. Joana Bravo — Todos os direitos reservados</p>
-  </div>
-</footer>
-
-<a href="https://wa.me/351969704868" class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Contactar via WhatsApp">
-  <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor" aria-hidden="true">
-    <path d="M16 3C9.4 3 4 8.4 4 15c0 2.2.6 4.3 1.7 6.2L4 29l8-2c1.8 1 3.9 1.5 6 1.5 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 2c5.5 0 10 4.5 10 10s-4.5 10-10 10c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.7 1.2 1.3-4.6-.2-.4C5.7 18.5 5 16.8 5 15c0-5.5 4.5-10 11-10zm-4.4 5.4c-.2 0-.5 0-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.2 5 4.3 2.4 1 2.9.8 3.4.7.5 0 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4l-2.5-1.2c-.3-.1-.5-.2-.7.2-.2.3-.8 1.1-1 1.3-.2.2-.4.2-.7.1-1.3-.6-2.4-1.3-3.4-2.6-.3-.4.3-.4.8-1.3.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.5-.5-.5-.7-.5h-.4z"/>
-  </svg>
+<!-- Barra fixa WhatsApp (só mobile) -->
+<a href="https://wa.me/351969704868" target="_blank" rel="noopener" class="mobile-cta">
+  <span aria-hidden="true">💬</span> Agendar no WhatsApp
 </a>
 
 <script src="script.js"></script>
