@@ -286,9 +286,9 @@ h1 em, h2 em { font-style: italic; color: var(--primary); }
 .service-card p { margin: 0; color: var(--muted-foreground); font-size: .95rem; }
 
 /* ---------- Galeria antes/depois ---------- */
-/* Nota: as próprias fotos já trazem a moldura, as etiquetas "Antes/Depois" e o texto
-   embutidos na imagem (design do site original) — por isso mostramos a imagem completa,
-   sem cortar (nada de object-fit:cover nem height:100%, senão corta-se o texto de baixo). */
+/* As fotos trazem a moldura e as etiquetas "Antes/Depois" embutidas (imagem já cortada
+   sem o texto de legenda); a legenda (título + descrição) é HTML próprio, num rodapé
+   fixo que não é afetado pelo zoom do hover — só a foto amplia. */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -300,9 +300,11 @@ h1 em, h2 em { font-style: italic; color: var(--primary); }
   border-radius: 18px;
   overflow: hidden;
   border: 1px solid var(--border);
+  background: var(--card);
   box-shadow: 0 12px 28px -18px var(--shadow-tint-soft);
   transition: box-shadow .25s ease, transform .25s ease;
 }
+.gallery-photo { overflow: hidden; }
 .gallery-item img {
   width: 100%;
   height: auto;
@@ -314,6 +316,9 @@ h1 em, h2 em { font-style: italic; color: var(--primary); }
   box-shadow: 0 20px 40px -20px var(--shadow-tint);
 }
 .gallery-item:hover img { transform: scale(1.06); }
+.gallery-caption { padding: 1.3rem 1.5rem 1.5rem; }
+.gallery-caption h3 { font-size: 1.05rem; font-family: var(--font-sans); font-weight: 500; margin: 0 0 .4em; }
+.gallery-caption p { margin: 0; color: var(--muted-foreground); font-size: .9rem; line-height: 1.5; }
 .gallery-tagline {
   text-align: center;
   font-family: var(--font-serif);
