@@ -528,14 +528,16 @@ main section[id], footer[id] { scroll-margin-top: 80px; }
 .cta-divider { width: 64px; height: 1px; margin: 1.5rem auto 0; background: linear-gradient(to right, transparent, var(--gold), transparent); }
 .cta-dark-text { color: var(--deep-foreground); opacity: .75; margin: 1.5rem 0 0; }
 
-/* ---------- Copyright (dentro do rodapé escuro) ---------- */
+/* ---------- Footer (copyright, claro) ---------- */
+.site-footer {
+  background: var(--background);
+  padding-block: 1.6rem;
+  text-align: center;
+}
 .footer-copy {
   font-size: .72rem;
-  color: var(--deep-foreground);
-  opacity: .55;
-  margin: 3rem 0 0;
-  padding-top: 2rem;
-  border-top: 1px solid rgba(255,255,255,.12);
+  color: var(--muted-foreground);
+  margin: 0;
 }
 
 /* ---------- Barra fixa WhatsApp (mobile) ---------- */
