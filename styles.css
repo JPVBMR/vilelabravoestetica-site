@@ -194,6 +194,20 @@ h1 em, h2 em { font-style: italic; color: var(--primary); }
 .section { padding-block: clamp(3rem, 6vw, 5rem); }
 .section-muted { background: var(--muted); }
 .section-heading { max-width: 640px; margin-bottom: 2.5rem; }
+.section-heading-center {
+  max-width: 640px;
+  margin-inline: auto;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.section-heading-center::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: var(--primary);
+  margin: 1.3rem auto 0;
+}
 .section-text { max-width: 65ch; color: var(--muted-foreground); font-size: 1.05rem; }
 
 /* ---------- Sobre ---------- */
@@ -215,17 +229,44 @@ h1 em, h2 em { font-style: italic; color: var(--primary); }
   align-items: center;
   gap: .5rem;
 }
-.credentials {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
+/* ---------- Formação e Experiência (timeline) ---------- */
+.timeline {
+  position: relative;
+  max-width: 620px;
+  margin: 0 auto;
+  padding-left: 2.2rem;
 }
-.credential {
-  border-left: 2px solid var(--primary);
-  padding-left: 1rem;
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 8px;
+  bottom: 8px;
+  width: 1px;
+  background: var(--border);
 }
-.credential h3 { font-size: 1rem; font-family: var(--font-sans); font-weight: 500; margin-bottom: .3em; }
-.credential p { margin: 0; color: var(--muted-foreground); font-size: .92rem; }
+.timeline-item { position: relative; padding-bottom: 2.6rem; }
+.timeline-item:last-child { padding-bottom: 0; }
+.timeline-dot {
+  position: absolute;
+  left: -2.2rem;
+  top: 6px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1px solid var(--primary);
+  background: var(--background);
+}
+.timeline-label {
+  font-size: .75rem;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--primary);
+  font-weight: 500;
+  margin: 0 0 .4em;
+}
+.timeline-item h3 { font-size: 1.3rem; margin: 0 0 .2em; }
+.timeline-sub { margin: 0; color: var(--muted-foreground); font-size: .92rem; }
 
 /* ---------- Serviços ---------- */
 .services-grid {
@@ -245,10 +286,14 @@ h1 em, h2 em { font-style: italic; color: var(--primary); }
 .service-card p { margin: 0; color: var(--muted-foreground); font-size: .95rem; }
 
 /* ---------- Galeria antes/depois ---------- */
+/* Nota: as próprias fotos já trazem a moldura, as etiquetas "Antes/Depois" e o texto
+   embutidos na imagem (design do site original) — por isso mostramos a imagem completa,
+   sem cortar (nada de object-fit:cover nem height:100%, senão corta-se o texto de baixo). */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1.5rem;
+  align-items: start;
 }
 .gallery-item {
   margin: 0;
@@ -260,8 +305,7 @@ h1 em, h2 em { font-style: italic; color: var(--primary); }
 }
 .gallery-item img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   display: block;
   transition: transform .4s ease;
 }
@@ -270,6 +314,14 @@ h1 em, h2 em { font-style: italic; color: var(--primary); }
   box-shadow: 0 20px 40px -20px var(--shadow-tint);
 }
 .gallery-item:hover img { transform: scale(1.06); }
+.gallery-tagline {
+  text-align: center;
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--primary);
+  font-size: 1.05rem;
+  margin: 2.5rem 0 0;
+}
 
 /* ---------- Testemunhos ---------- */
 .testimonials-grid {
