@@ -37,6 +37,31 @@
 </head>
 <body>
 
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#inicio" class="logo">Dra. Joana Bravo</a>
+    <nav class="nav-desktop">
+      <a href="#sobre">Sobre</a>
+      <a href="#tratamentos">Tratamentos</a>
+      <a href="#resultados">Resultados</a>
+      <a href="#testemunhos">Testemunhos</a>
+      <a href="#formacao">Formação</a>
+      <a href="#localizacao">Localização</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-mobile" id="nav-mobile">
+    <a href="#sobre">Sobre</a>
+    <a href="#tratamentos">Tratamentos</a>
+    <a href="#resultados">Resultados</a>
+    <a href="#testemunhos">Testemunhos</a>
+    <a href="#formacao">Formação</a>
+    <a href="#localizacao">Localização</a>
+  </nav>
+</header>
+
 <main>
 
   <!-- HERO -->
@@ -299,30 +324,19 @@
     </div>
   </section>
 
-  <!-- AGENDAR (CTA escuro) -->
-  <section id="agendar" class="cta-dark">
-    <div class="cta-glow" aria-hidden="true"></div>
-    <div class="container cta-dark-inner">
-      <p class="eyebrow eyebrow-gold">Dra. Joana Bravo</p>
-      <h2 class="cta-dark-title">Realce a Sua <em>Beleza Natural</em></h2>
-      <div class="cta-divider" aria-hidden="true"></div>
-      <p class="cta-dark-text">Agende já a sua consulta com a Dra. Joana Bravo</p>
-      <a href="https://wa.me/351969704868" target="_blank" rel="noopener" class="btn btn-light">Agendar no WhatsApp</a>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="container">
-      <p class="footer-name">Dra. Joana Bravo</p>
-      <p class="eyebrow">Medicina Estética</p>
-      <address class="footer-address">Praça Conde de Agrolongo 183, Braga</address>
-      <a href="https://instagram.com/dra.joanabravo" target="_blank" rel="noopener" class="footer-instagram">Instagram: @dra.joanabravo</a>
-      <p class="footer-copy">&copy; <span id="year"></span> Dra. Joana Bravo — Todos os direitos reservados</p>
-    </div>
-  </footer>
-
 </main>
+
+<!-- AGENDAR + FOOTER (fundidos: secção escura serve de rodapé final) -->
+<footer id="agendar" class="cta-dark">
+  <div class="cta-glow" aria-hidden="true"></div>
+  <div class="container cta-dark-inner">
+    <p class="eyebrow eyebrow-gold">Dra. Joana Bravo</p>
+    <h2 class="cta-dark-title">Realce a Sua <em>Beleza Natural</em></h2>
+    <div class="cta-divider" aria-hidden="true"></div>
+    <p class="cta-dark-text">Agende já a sua consulta com a Dra. Joana Bravo</p>
+    <p class="footer-copy">&copy; <span id="year"></span> Dra. Joana Bravo — Todos os direitos reservados</p>
+  </div>
+</footer>
 
 <!-- Barra fixa WhatsApp (só mobile) -->
 <a href="https://wa.me/351969704868" target="_blank" rel="noopener" class="mobile-cta">

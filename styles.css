@@ -19,6 +19,7 @@
   --gold: #cba966;
   --deep: #453a30;
   --deep-foreground: #f4efe6;
+  --header-bg: rgba(248, 244, 238, .88);
   --shadow-tint: rgba(61, 51, 44, .3);
   --shadow-tint-soft: rgba(61, 51, 44, .25);
   --primary-shadow: rgba(189, 140, 98, .5);
@@ -45,6 +46,7 @@
     --gold: oklch(79% .09 85);
     --deep: oklch(33% .026 62);
     --deep-foreground: oklch(96.5% .012 85);
+    --header-bg: oklch(97.6% .008 85 / .88);
     --shadow-tint: oklch(26% .015 60 / .3);
     --shadow-tint-soft: oklch(26% .015 60 / .25);
     --primary-shadow: oklch(68.5% .065 62 / .5);
@@ -125,6 +127,67 @@ h2 { font-size: clamp(1.7rem, 3.5vw, 2.4rem); }
   color: var(--foreground);
 }
 .btn-light:hover { transform: scale(1.02); }
+
+/* ---------- Header / navegação ---------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--header-bg);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-block: 1rem;
+}
+.logo {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+}
+.nav-desktop { display: flex; gap: 1.6rem; }
+.nav-desktop a {
+  font-size: .78rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+.nav-desktop a:hover { color: var(--primary); }
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.nav-toggle span { width: 100%; height: 2px; background: var(--foreground); }
+
+.nav-mobile {
+  display: none;
+  flex-direction: column;
+  padding: 0 24px 1rem;
+  gap: .75rem;
+}
+.nav-mobile a { padding: .5rem 0; border-bottom: 1px solid var(--border); font-size: .9rem; }
+.nav-mobile.open { display: flex; }
+
+@media (max-width: 860px) {
+  .nav-desktop { display: none; }
+  .nav-toggle { display: flex; }
+}
+
+/* Ancoragem suave: compensa a altura do header fixo para o título da secção
+   não ficar escondido atrás dele ao clicar num link do menu. */
+main section[id], footer[id] { scroll-margin-top: 80px; }
 
 /* ---------- Hero (#inicio) ---------- */
 .hero-full {
@@ -464,20 +527,16 @@ h2 { font-size: clamp(1.7rem, 3.5vw, 2.4rem); }
 .cta-dark-title em { font-style: italic; color: var(--gold); }
 .cta-divider { width: 64px; height: 1px; margin: 1.5rem auto 0; background: linear-gradient(to right, transparent, var(--gold), transparent); }
 .cta-dark-text { color: var(--deep-foreground); opacity: .75; margin: 1.5rem 0 0; }
-.cta-dark .btn { margin-top: 2.5rem; }
 
-/* ---------- Footer ---------- */
-.site-footer {
-  border-top: 1px solid var(--border);
-  padding-block: 3.5rem;
-  text-align: center;
+/* ---------- Copyright (dentro do rodapé escuro) ---------- */
+.footer-copy {
+  font-size: .72rem;
+  color: var(--deep-foreground);
+  opacity: .55;
+  margin: 3rem 0 0;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255,255,255,.12);
 }
-.footer-name { font-family: var(--font-serif); font-size: 1.6rem; margin: 0; }
-.site-footer .eyebrow { margin: .5rem 0 0; }
-.footer-address { font-style: normal; font-size: .9rem; color: var(--muted-foreground); margin-top: 1.5rem; }
-.footer-instagram { display: inline-block; margin-top: 1rem; font-size: .9rem; }
-.footer-instagram:hover { color: var(--primary); }
-.footer-copy { font-size: .75rem; color: var(--muted-foreground); margin-top: 2.5rem; }
 
 /* ---------- Barra fixa WhatsApp (mobile) ---------- */
 .mobile-cta {
